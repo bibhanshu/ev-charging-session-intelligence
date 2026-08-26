@@ -1,0 +1,30 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# PyCharm
+.idea/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Data files -- raw/pulled data shouldn't live in git (too large, and
+# regeneratable via the pull/load scripts)
+*.csv
+*.jsonl
+jpl_sessions_raw.csv
+jpl_sessions_progress.jsonl
+
+# Model artifacts (can be large; regenerate via training scripts)
+*.pkl
+*.joblib
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables / secrets (if you ever add a .env file)
+.env
